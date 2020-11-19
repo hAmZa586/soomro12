@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 style="color: floralwhite;"> CALCULATOR : Hamza soomro</h1>
+    <div class="main">
+        <form name="form">
+            <input type="text" id="data" class="text" name="textview" onkeypress="filterDigits(event)">
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" class="btn" value="c" onClick="clean()"></td>
+                <td><input type="button" class="btn" value="<" onClick="back()"></td>
+                <td><input type="button" class="btn" value="/" onClick="insert(this.value)"></td>
+                <td><input type="button" class="btn" value="*" onClick="insert(this.value)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="btn" value="7" onClick="insert(this.value)"></td>
+                <td><input type="button" class="btn" value="8" onClick="insert(this.value)"></td>
+                <td><input type="button" class="btn" value="9" onClick="insert(this.value)"></td>
+                <td><input type="button" class="btn" value="-" onClick="insert(this.value)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="btn" value="4" onClick="insert(this.value)"></td>
+                <td><input type="button" class="btn" value="5" onClick="insert(this.value)"></td>
+                <td><input type="button" class="btn" value="6" onClick="insert(this.value)"></td>
+                <td><input type="button" class="btn" value="+" onClick="insert(this.value)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="btn" value="1" onClick=" insert(this.value)"></td>
+                <td><input type="button" class="btn" value="2" onClick="insert(this.value)"></td>
+                <td><input type="button" class="btn" value="3" onClick="insert(this.value)"></td>
+                <td><input type="button" class="btn equal" value="=" onClick="equal()"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="btn zero" value="0" onClick="insert(this.value)"></td>
+                <td></td>
+                <td><input type="button" class="btn" value="." onClick="insert(this.value)"></td>
+            </tr>
+
+        </table>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
